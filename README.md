@@ -64,7 +64,7 @@ Esse tipo de formulário aparece em quase todo site e aplicativo (cadastros, com
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/SEU_USUARIO/FormularioTrilhas.git
+   git clone https://github.com/andreluisaguiar/FormularioTrilhas.git
    cd FormularioTrilhas
    ```
 2. Abra o arquivo `index.html` no navegador.
