@@ -2,9 +2,9 @@ const formulario = document.getElementById('formulario');
 
 // 4.1 Funções para mostrar e limpar a mensagem de erro (André)
 
-// 4.2 Validação do Telefone (Maria)
+// 4.2 Validação do Telefone (André)
 
-// 4.3 Validação do E-mail (Maria)
+// 4.3 Validação do E-mail (André)
 
 // 4.4 Validação do CPF (André)
 

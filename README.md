@@ -84,7 +84,7 @@ FormularioTrilhas/
 ├── js/
 │   └── script.js       # Validações do formulário
 ├── assets/
-│   └── img/            # Imagens e ícones exportados do Figma
+│   └── imgs/           # Imagens e ícones exportados do Figma
 └── README.md
 ```
 
@@ -209,46 +209,46 @@ const valido = existe && !noFuturo;
 
 | Integrante | Tarefas | Foco |
 | ---------- | ------- | ---- |
-| **André** | 1.1, 1.2, 2.2, 2.3, 2.5, 3.2, 3.3, 4.1, 4.4, 4.5, 4.6, 5.1 | Estrutura base, layout geral, campos do formulário e as validações mais complexas (CPF e data) |
-| **Maria** | 1.3, 2.1, 2.4, 3.1, 3.4, 3.5, 4.2, 4.3, 5.2, 5.3 | Partes visuais mais diretas, validações mais simples (telefone e e-mail), testes e documentação |
+| **Maria** | 2.1, 2.2, 2.3, 2.4, 2.5 | Toda a estrutura da página em **HTML** |
+| **André** | 1.1, 1.2, 1.3, 3.1 a 3.5, 4.1 a 4.6, 5.1 a 5.3 | Configuração, todo o **CSS**, todo o **JavaScript** e a finalização |
 
-> Maria tem tarefas em **todas as etapas**, então os dois terão commits ao longo do desafio inteiro, como pede a avaliação.
+> Para os commits da Maria aparecerem bem no histórico, cada tarefa de HTML (2.1 a 2.5) deve ter **pelo menos um commit próprio**, em vez de um único commit com o HTML inteiro.
 
 ### Etapa 1: Configuração
 
 | #   | Tarefa                                                                                        | Responsável | Status |
 | --- | --------------------------------------------------------------------------------------------- | ------------ | ------ |
-| 1.1 | Criar repositório, adicionar o parceiro como colaborador e subir este README                 | André        | ⬜     |
+| 1.1 | Criar repositório, adicionar a parceira como colaboradora e subir este README                | André        | ⬜     |
 | 1.2 | Criar a estrutura de pastas e os arquivos base (`index.html`, `style.css`, `script.js`) | André        | ⬜     |
-| 1.3 | Exportar do Figma as imagens/ícones e anotar cores e fontes                                  | Maria        | ⬜     |
+| 1.3 | Exportar do Figma as imagens/ícones e anotar cores e fontes                                  | André        | 🟨     |
 
 ### Etapa 2: Estrutura (HTML)
 
 | #   | Tarefa                                                                 | Responsável | Status |
 | --- | ---------------------------------------------------------------------- | ------------ | ------ |
 | 2.1 | Cabeçalho e título/textos da página                                 | Maria        | ⬜     |
-| 2.2 | Campos de dados pessoais (nome, CPF, data de nascimento, etc.)         | André        | ⬜     |
-| 2.3 | Campos de contato (telefone, e-mail, etc.) e os demais campos do Figma | André        | ⬜     |
+| 2.2 | Campos de dados pessoais (nome, CPF, data de nascimento, etc.)         | Maria        | ⬜     |
+| 2.3 | Campos de contato (telefone, e-mail, etc.) e os demais campos do Figma | Maria        | ⬜     |
 | 2.4 | Botões "Cancelar" e "Realizar inscrição"                            | Maria        | ⬜     |
-| 2.5 | Espaço para a mensagem de erro abaixo de cada campo validado          | André        | ⬜     |
+| 2.5 | Espaço para a mensagem de erro abaixo de cada campo validado          | Maria        | ⬜     |
 
 ### Etapa 3: Estilo (CSS)
 
 | #   | Tarefa                                                            | Responsável | Status |
 | --- | ----------------------------------------------------------------- | ------------ | ------ |
-| 3.1 | Variáveis de cores e fontes (`:root`), reset e estilos globais | Maria        | ⬜     |
+| 3.1 | Variáveis de cores e fontes (`:root`), reset e estilos globais | André        | ⬜     |
 | 3.2 | Layout geral da página (container, espaçamentos, alinhamentos)  | André        | ⬜     |
 | 3.3 | Estilo dos campos (inputs, labels, selects, foco)                 | André        | ⬜     |
-| 3.4 | Estilo dos botões                                                | Maria        | ⬜     |
-| 3.5 | Estilo de erro (borda vermelha e mensagem)                        | Maria        | ⬜     |
+| 3.4 | Estilo dos botões                                                | André        | ⬜     |
+| 3.5 | Estilo de erro (borda vermelha e mensagem)                        | André        | ⬜     |
 
 ### Etapa 4: Validação (JavaScript)
 
 | #   | Tarefa                                                              | Responsável | Status |
 | --- | ------------------------------------------------------------------- | ------------ | ------ |
 | 4.1 | Funções para mostrar e limpar a mensagem de erro                  | André        | ⬜     |
-| 4.2 | Validação do **Telefone**                                   | Maria        | ⬜     |
-| 4.3 | Validação do **E-mail**                                     | Maria        | ⬜     |
+| 4.2 | Validação do **Telefone**                                   | André        | ⬜     |
+| 4.3 | Validação do **E-mail**                                     | André        | ⬜     |
 | 4.4 | Validação do **CPF**                                        | André        | ⬜     |
 | 4.5 | Validação da **Data de nascimento**                         | André        | ⬜     |
 | 4.6 | Ligar as validações aos eventos (`submit`, `blur`, `input`) | André        | ⬜     |
@@ -258,21 +258,44 @@ const valido = existe && !noFuturo;
 | #   | Tarefa                                                                  | Responsável | Status |
 | --- | ----------------------------------------------------------------------- | ------------ | ------ |
 | 5.1 | Comparar a página com o Figma e ajustar os detalhes                    | André        | ⬜     |
-| 5.2 | Testar todos os casos (ver [checklist de testes](#-checklist-de-testes)) | Maria        | ⬜     |
-| 5.3 | Revisar o README e marcar o status como concluído                      | Maria        | ⬜     |
+| 5.2 | Testar todos os casos (ver [checklist de testes](#-checklist-de-testes)) | André        | ⬜     |
+| 5.3 | Revisar o README e marcar o status como concluído                      | André        | ⬜     |
 
 **Legenda:** ⬜ A fazer · 🟨 Em andamento · ✅ Concluído
 
+### Combinado entre o HTML e o CSS/JS
+
+Como o HTML é de uma pessoa e o CSS/JS de outra, os dois precisam usar **os mesmos nomes**. A Maria usa estes `id`s e classes no HTML, e o André usa os mesmos no CSS e no JavaScript:
+
+| Elemento | No HTML | Exemplo |
+| -------- | ------- | ------- |
+| Formulário | `id="formulario"` | `<form id="formulario" novalidate>` |
+| Telefone | `id="telefone"` | `<input type="tel" id="telefone" name="telefone">` |
+| E-mail | `id="email"` | `<input type="email" id="email" name="email">` |
+| CPF | `id="cpf"` | `<input type="text" id="cpf" name="cpf">` |
+| Data de nascimento | `id="data-nascimento"` | `<input type="date" id="data-nascimento" name="data-nascimento">` |
+| Grupo de cada campo | `class="campo"` | uma `<div class="campo">` envolvendo label, input e erro |
+| Mensagem de erro | `class="mensagem-erro"` + `id="erro-<campo>"` | `<span class="mensagem-erro" id="erro-telefone"></span>` |
+
+Exemplo completo de um campo validado:
+
+```html
+<div class="campo">
+  <label for="telefone">Telefone</label>
+  <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+  <span class="mensagem-erro" id="erro-telefone"></span>
+</div>
+```
+
+> Se algum nome precisar mudar, combinem antes e atualizem esta tabela.
+
 ### Ordem e dependências
 
-Algumas tarefas dependem de outras. Sigam esta ordem para ninguém ficar esperando:
-
-1. **André** faz 1.1 e 1.2 primeiro (o repositório e os arquivos base). Enquanto isso, **Maria** faz 1.3 (cores e fontes do Figma), que já serve para a 3.1.
-2. No HTML, cada um trabalha em uma parte diferente do `index.html`. Maria faz o topo (2.1) e o rodapé com os botões (2.4); André faz os campos do meio (2.2, 2.3 e 2.5).
-3. A **3.5** (estilo de erro) da Maria depende da **2.5** (espaço da mensagem de erro) do André.
-4. A **4.1** (funções de mostrar/limpar erro) do André deve ser feita **antes** da 4.2 e da 4.3 da Maria, porque as validações usam essas funções.
-5. A **4.6** (ligar aos eventos) é a última do JavaScript: ela junta as quatro validações.
-6. A **5.2** (testes) da Maria vem depois que todo o JavaScript estiver pronto. Se algum teste falhar, ela avisa quem é o responsável pela validação.
+1. **André** termina a configuração (1.1, 1.2 e 1.3) e sobe para a `main`.
+2. **Maria** monta o HTML seguindo o [combinado acima](#combinado-entre-o-html-e-o-cssjs). Ela pode começar logo depois do passo 1.
+3. Enquanto isso, **André** já adianta o que não depende do HTML pronto: variáveis e reset (3.1) e as funções de validação (4.2 a 4.5), que só recebem um valor e respondem se é válido.
+4. Quando o HTML estiver na `main`, **André** faz o restante do CSS (3.2 a 3.5) e liga as validações à página (4.1 e 4.6).
+5. Por último vêm os ajustes com o Figma e os testes (5.1 a 5.3).
 
 ### 🧪 Checklist de testes
 
