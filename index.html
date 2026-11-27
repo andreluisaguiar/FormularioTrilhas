@@ -16,14 +16,26 @@
     </p>
   </header>
 
-  <main>
     <form id="formulario" novalidate>
+      <h2 class="section-title">Informações do participante</h2>
+
       <!-- 2.2 Campos de dados pessoais (Maria) -->
-      
+      <div class="campo">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" placeholder="Maria Silva">
+      </div>
+
+      <div class="campo">
+        <label for="data-nascimento">Data de nascimento</label>
+        <input type="date" id="data-nascimento" name="data-nascimento">
+        
       <!-- 2.3 Campos de contato e demais campos do Figma (Maria) -->
+         <div class="campo">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="nome@email.com">
 
       <!-- 2.5 Abaixo de cada campo validado, um span de erro (ver "Combinado" no README) (Maria) -->
-
+        
       <!-- 2.4 Botões "Cancelar" e "Realizar inscrição" (Maria) -->
     </form>
   </main>
