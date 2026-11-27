@@ -7,19 +7,103 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <main>
   <!-- 2.1 Cabeçalho e título/textos da página (Maria) -->
-  <header>
+  <header class="form-header">
+    <h1>Formulário de inscrição</h1>
+    <p class="form-subtitle">
+      Preencha os dados abaixo para fazer sua inscrição no programa Trilhas.
+    </p>
   </header>
 
-  <main>
     <form id="formulario" novalidate>
+      <h2 class="section-title">Informações do participante</h2>
+
       <!-- 2.2 Campos de dados pessoais (Maria) -->
+      <div class="campo">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" placeholder="Maria Silva">
+      </div>
+
+      <div class="campo">
+        <label for="data-nascimento">Data de nascimento</label>
+        <input type="date" id="data-nascimento" name="data-nascimento">
 
       <!-- 2.3 Campos de contato e demais campos do Figma (Maria) -->
+         <div class="campo">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="nome@email.com">
 
       <!-- 2.5 Abaixo de cada campo validado, um span de erro (ver "Combinado" no README) (Maria) -->
+          <span class="mensagem-erro" id="erro-data-nascimento" aria-live="polite"></span>
+      </div>
+
+      <div class="campo">
+        <label for="cpf">CPF</label>
+        <input type="text" id="cpf" name="cpf" placeholder="123.456.789-00" maxlength="14" inputmode="numeric">
+
+        <!-- 2.5 -->
+        <span class="mensagem-erro" id="erro-cpf" aria-live="polite"></span>
+      </div>
+
+      <div class="campo">
+        <label for="sexo">Sexo</label>
+        <select id="sexo" name="sexo">
+          <option value="Feminino">Feminino</option>
+          <option value="Masculino">Masculino</option>
+          <option value="Outro">Outro</option>
+          <option value="Prefiro não informar">Prefiro não informar</option>
+        </select>
+      </div>
+
+         <!-- 2.5 -->
+           <span class="mensagem-erro" id="erro-email" aria-live="polite"></span>
+      </div>
+
+      <div class="campo">
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+
+         <!-- 2.5 -->
+          <span class="mensagem-erro" id="erro-telefone" aria-live="polite"></span>
+      </div>
+
+      <div class="terms-group">
+        <input type="checkbox" id="termos" name="termos">
+        <label for="termos">
+          Declaro que li e concordo com os
+          <a href="#termos" onclick="return false;">Termos e Condições</a> e
+          com a
+          <a href="#privacidade" onclick="return false;">Política de Privacidade</a>.
+        </label>
+      </div>
 
       <!-- 2.4 Botões "Cancelar" e "Realizar inscrição" (Maria) -->
+       <div class="form-actions">
+        <button type="button" class="btn btn-cancel" id="btn-cancelar">Cancelar</button>
+        <button type="submit" class="btn btn-submit" id="btn-inscrever">Realizar inscrição</button>
+      </div>
+    </form>
+  </main>
+
+  <aside class="visual-panel" aria-label="Painel lateral do Programa Trilhas">
+    <div class="illustration-container">
+      <div class="backdrop-circle"></div>
+
+      <div class="brand-footer">
+        <span class="brand-trilhas">
+          <span class="trilhas-icon" aria-hidden="true"></span>
+          trilhas
+        </span>
+        <span class="brand-divider" aria-hidden="true">|</span>
+        <span class="brand-inova">
+          INOVA
+          <small>Maranhão</small>
+        </span>
+      </div>
+    </div>
+  </aside>
+
     </form>
   </main>
 
